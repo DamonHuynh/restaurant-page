@@ -1,1 +1,2 @@
-console.log(meow);
+import "./style.css";
+console.log("meow");

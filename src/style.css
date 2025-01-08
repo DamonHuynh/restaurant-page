@@ -1,0 +1,84 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+:root{
+    --header: #fea4c7;
+    --main-background: #f8d2e2;
+    --middle: #f5f3f4;
+    --main-font: "Cabin Sketch", serif;
+}
+
+body{
+    background-color: var(--main-background);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--main-font);
+
+}
+nav{
+    display: flex;
+    justify-content: space-between ;
+    background-color: var(--header);
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+nav > div{
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+}
+
+button{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-family: var(--main-font);
+    font-size: 1.25rem;
+}
+
+button:hover{
+    color: white;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content > div{
+    background-color: var(--middle);
+    width: calc(65vh + 10vw);
+    height: 75vh;
+    border-radius: 75px;
+    box-shadow: 0px 0px 5px 1px grey;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh;
+
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    align-self: top;
+}
+
+img{
+    width: max(600px, 30vw)
+
+}
+
+p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+button, nav>p{
+    cursor: pointer;
+}
