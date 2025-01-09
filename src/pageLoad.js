@@ -1,5 +1,3 @@
-import homePageElements from homePage.js;
-
 
 function combineElements(elements){
     const container = elements[0];
@@ -11,6 +9,8 @@ function combineElements(elements){
 
 function pageLoad(container){
     const content = document.getElementById("content");
+    content.removeChild(content.childNodes[0]);
     content.appendChild(container);
 }
 
+export {combineElements, pageLoad};

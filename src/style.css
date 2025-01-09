@@ -52,15 +52,32 @@ button:hover{
     background-color: var(--middle);
     width: calc(65vh + 10vw);
     height: 75vh;
-    border-radius: 75px;
+    border-radius: 30px;
     box-shadow: 0px 0px 5px 1px grey;
     margin-bottom: 1rem;
+    padding: 2rem;
+    overflow: scroll;
+    scrollbar-width: none;
     display: flex;
     flex-direction: column;
+}
+
+.home{
     justify-content: space-between;
     align-items: center;
-    padding: 5vh;
+}
+.about{
+    justify-content: center;
+    align-items: center;
+}
 
+.about > p {
+    width: 70%;
+}
+
+.menu{
+    justify-content: space-around;
+    align-items: center;
 }
 
 h1{
@@ -70,7 +87,9 @@ h1{
 }
 
 img{
-    width: max(600px, 30vw)
+    width: min(500px, 40vw);
+    max-height: 80%;
+    max-width: 80%;
 
 }
 
@@ -81,4 +100,8 @@ p{
 
 button, nav>p{
     cursor: pointer;
+}
+
+.currentTab{
+    color: white;
 }
